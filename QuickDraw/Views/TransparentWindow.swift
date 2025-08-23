@@ -17,6 +17,8 @@ final class TransparentWindow: NSWindow, Watcher {
         isOpaque = false
         isMovable = false
 
+        collectionBehavior.insert([.canJoinAllSpaces, .fullScreenAuxiliary])
+
         toolbar?.allowsUserCustomization = false
         toolbar?.allowsExtensionItems = false
 
